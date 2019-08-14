@@ -16,9 +16,9 @@ public class Main {
 		array = frase.split(" ");	
 		for (String m_str : array) 
 		{	/*
-			função "CONTAINS, conta o número de ocorrenciar da palavra desejada"
+			função "CONTAINS .. equals, conta o número de ocorrenciar da palavra desejada"
 			*/
-			if (m_str.contains("vermelho")) 
+			if (m_str.equals("vermelho")) 
 			{
 				cont += 1;
 			}
