@@ -10,7 +10,7 @@ public class MinhaClasse {
 	        double y2 = sc.nextDouble(); 
 	        double a = Math.pow((x2-x1),2) + Math.pow((y2-y1),2);
 	        double distance =  Math.sqrt(a); 
-	         System.out.printf(" %.4d %n" + distance);
+	         System.out.println(distance);
 	 
 	    }
 	 
