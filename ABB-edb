@@ -1,0 +1,57 @@
+
+public class No {
+	protected int valor;
+	protected No esq;
+	protected No dir;
+	public int getValor() {
+		return valor;
+	}
+	
+	public void setValor(int valor) {
+		this.valor = valor;
+	}
+	public No getEsq() {
+		return esq;
+	}
+	public void setEsq(No esq) {
+		this.esq = esq;
+	}
+	public No getDir() {
+		return dir;
+	}
+	public void setDir(No dir) {
+		this.dir = dir;
+	}
+	
+}
+///////////
+
+public class Arvore {
+	private No raiz;
+
+	public  Arvore() {
+		// TODO Auto-generated constructor stub
+		raiz  = null;
+	} 
+	
+	public void emOrdem(No no) {
+	    if (no != null) {
+	        emOrdem(no.esq);
+	        System.out.println(no.valor);
+	        emOrdem(no.dir);
+	    }
+	}
+	
+	public void verificar (int valor) {
+		
+		
+	}
+	
+	public void inserir (int valor) {
+		No novo_no = new No (); //criando um novo nó 
+		novo_no.valor = valor;
+		novo_no.dir = null;
+		novo_no.esq = null;
+		
+	}
+}
